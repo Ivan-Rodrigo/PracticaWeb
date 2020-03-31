@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'bootstrap4','Login',
+    'bootstrap4','Login','Landing','Dashboard',
     
 ]
 
@@ -77,10 +77,16 @@ WSGI_APPLICATION = 'ProyectoWeb.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'PracticaWeb',
+        'USER' : 'postgres',
+        'PASSWORD': '101513',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
+# para no poder pasar sin antes logeaser
+LOGIN_URL = '/Login/'
 
 
 # Password validation
