@@ -1,3 +1,57 @@
-<h3>
-    Hola AKi estoy
-</h3>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+</head>
+<body background="https://img.goipadwallpapers.com/2012/02/08/aecdf98ac5a83767_1024x1024.jpg" style= "background-repeat: no-repeat height:100%; width:100%;">
+    
+        
+        
+            <form action="" method="POST" >
+                <br>
+                <br>
+                <br>
+                <br>
+                
+                <div  class="mx-auto rounded " style="width: 450px; text-align: center; background-color:thistle;">
+                    <br>
+                    <br>
+                    <img src="https://img.ecartelera.com/noticias/29500/29598-m.jpg" alt="..." class=" mx-auto rounded-circle  " style=" height:200px; width:200px;">
+                    <br>
+                    <br>
+                    <br>
+                    <h2>Usuario {{request.user.username}}</h1>
+                    <br>
+                    <h2>Nombre {{request.user.first_name}}</h1>
+                    <br>
+                    <h2>Apellido {{request.user.last_name}}</h1>
+                    <br>
+                    <h2>E-mail {{request.user.email}}</h1>
+                    <br>
+
+                <a class="nav-link font-weight-bold" href="{% url 'logout' %}">Cerrar sesion<i class="fa fa-power -off;"></i></a>
+
+                </div>
+                
+                
+           
+            </form>
+        
+        
+        
+        </div>
+
+    
+        
+
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -7,31 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Document</title>
 </head>
-<body>
+<body background="https://img.goipadwallpapers.com/2012/02/08/aecdf98ac5a83767_1024x1024.jpg" style= "background-repeat: no-repeat height:100%; width:100%;" >
     <br>
     <br>
-   <div class="mx-auto border border-dark" style="width: 250px; text-align: center;">
+   <div class="mx-auto" style="width: 250px; text-align: center;">
     <br>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ2b6F_JhU4r7gDj4Mp9rAEFdDh-VOl-XVcJv6E5ROc_ahvGkQX" alt="..." class=" mx-auto rounded-circle border border-danger " >
+    <img src="https://em.wattpad.com/df9ca8df9598172466f81c818e04622055da8337/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6d636e317654396c34717a6d41413d3d2d3732342e313466343464623930353630323238303534333338313833353137372e6a7067?s=fit&w=720&h=720" alt="..." class=" mx-auto rounded-circle  " style="width: 200px; height: 200px;">
         <br>
         <br>
         
-        <form action="" method="POST" >
+        <form action="" method="POST"  >
+            
+            
             {%csrf_token%}
 
 
             <div class="form-group"  >
-                <input type="text" class="form-control "placeholder= "E-mail" name="user" required>
+                <input type="text " class="form-control  "placeholder= "E-mail" name="user" style="background-color:darkgray;" required>
             </div>
                 <br>
                 <br>
             <div class="form-group"  >
-                <input type="password" class="form-control" placeholder="Password" name="password" required> 
+                <input type="password" class="form-control" placeholder="Password" name="password" style="background-color:darkgray;" required> 
                 <br>
                
             </div>
             <div style="text-align: center;">
-                <button type="submit" >Entrar</button>
+                <button type="submit" class="btn btn-primary" >Entrar</button>
                 <br>
             </div>
             <br>
@@ -46,7 +48,9 @@
             
            
         </form>
-        <a href="{% url 'Landing:Landing' %}">Ir a Landing</a>
+        <a href="{% url 'Landing:Landing' %}" class="text-white bg-dark" >Ir a Landing</a>
+        <br>
+        <a href="{% url 'Register:Register' %}" class="text-white bg-dark" >Registarse</a>
    </div>
         
 
